@@ -1,0 +1,48 @@
+$primary-background: #00a1d1;
+$primary-text-color: #ffffff;
+$primary-font:'Roboto', sans-serif;
+
+// Header
+$header-bg: $primary-background;
+
+// Menu config
+$menu-hover-bg: #008ab3;
+$menu-text-color: $primary-text-color;
+$menu-font: $primary-font;
+$menu-dropdown-bg: #333333;
+$menu-dropdown-item-hover-bg: $primary-background;
+
+// Slideshow config
+$slideshow-font: $primary-font;
+$slideshow-text-color: $primary-text-color;
+$slideshow-dots-color: #ffffff;
+$slideshow-dots-active-color: $primary-background;
+
+//Article config
+
+$article-title-font: $primary-font;
+$article-title-size: 40px;
+$article-font-color: #4a4a4a;
+$article-text-size: 22px;
+$article-text-font: $primary-font;
+$article-text-color:#747474;
+$article-link-font: $primary-font;
+$article-link-color: $primary-background;
+$article-link-size : 22px;
+
+//Button config
+
+$load-more: $primary-font;
+$load-more-color: #b0b0b0;
+
+// Contact form config
+$contact-form-font: $primary-font;
+$contact-form-color: #4a4a4a;
+$contact-input-bg: #fff;
+$contact-submit-bg: #00a1d1;
+$contact-submit-color: #fff;
+
+// Footer config
+$footer-font: $primary-font;
+$footer-bg: #4a4a4a;
+$footer-color: #fff;

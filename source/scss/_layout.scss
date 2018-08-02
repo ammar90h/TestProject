@@ -1,0 +1,141 @@
+/* css for header*/
+.header {
+	height:75px;
+	width:100%;
+	background-color: $header-bg;
+	position: relative;
+	z-index: 101;
+
+	&__container {
+		@extend .container;
+	}
+	/*  logo*/
+	&__logo {
+		@extend .left;
+
+		&__link {
+			display: block;
+			margin-top: 23px;
+			margin-left: 28px;
+		}
+	}
+	/*  header menu */
+	&__menu {
+		@extend .right;
+
+		&__opener {
+			display:none;
+			margin-top:27px;
+			margin-right:16px;
+		}
+
+		&__list {
+			margin:0px;
+			padding: 0px;
+			list-style: none;
+		}
+
+		&__item {
+			float: left;
+			position: relative;
+
+			&:hover > .header__menu__dropdown {
+    			display: block;
+    		}
+
+    		&:hover > .header__menu__link {
+        		background:$menu-hover-bg;
+    		}
+		}
+		/* menu link*/
+		&__link {
+			display: block;
+			color:$menu-text-color;
+			text-decoration: none;
+			padding-left: 28px;
+			padding-right: 28px;
+			height: 75px;
+			line-height: 75px;
+			font-size: 22px;
+			font-family: $menu-font;
+		}
+			
+		/*  dropdown*/
+		&__dropdown{
+			margin:0px;
+			padding: 0px;
+			list-style: none;
+			width: 254px;
+			background-color: $menu-dropdown-bg;
+			position: absolute;
+			right:0px;
+			display: none;
+			float: left;
+
+			/*  dropdown link*/
+			&__link{
+				margin: 0px;
+				text-decoration: none;
+				font-size: 18px;
+				color: $menu-text-color;
+				display: block;
+				padding-top: 13px;
+				padding-left: 26px;
+				padding-right: 26px;
+				padding-bottom: 12px;
+				text-align: right;
+				font-family:$menu-font;
+
+				&:hover {
+	    			display: block;
+	    			background-color: $menu-dropdown-item-hover-bg;
+	    		}
+			}
+		}
+	}
+}
+
+.content{
+	@extend .container;
+	overflow: hidden;
+
+	&__fix {
+		margin-right: -20px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.contact{
+	background-color: #e9e9e9;
+	margin-top: 49px;
+	padding-bottom: 116px;
+
+	&__wrap{
+		@extend .container;
+	}
+}
+
+.footer {
+	width: 100%;
+	background: $footer-bg;
+	height: 70px;
+	font-family: $footer-font;
+	font-size: 16px;
+	color: $footer-color;
+	line-height: 36px;
+
+	&__wrap {
+		@extend .container;
+	}
+
+	&__left {
+		@extend .left;
+		margin-top: 16px;
+	}
+
+	&__right {
+		@extend .right;
+		margin-top: 16px;
+	}
+}
