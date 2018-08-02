@@ -3,7 +3,7 @@
 1. Clone git to you pc
 ```shell
 git clone https://github.com/ammar90h/TestProject
-cd TestZadatak1
+cd TestProject
 ```
 2. Install project dependencies
 ```shell
